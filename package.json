@@ -1,6 +1,6 @@
 {
   "name": "spirit.css",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A simple, yet complete CSS framework",
   "main": "index.html",
   "scripts": {
