@@ -1,0 +1,143 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    font-family: $serif-font, serif;
+    line-height: 1.5;
+    margin: 0;
+}
+
+h1 {
+    font-size: min(calc(3rem + 0.75vw), 6rem);
+    margin:  calc(0.5rem + 2vh)  0 calc(0.25rem + 1vh) 0;
+}
+
+h2 {
+    font-size: min(calc(2.5rem + 0.75vw), 5rem);
+    margin: calc(0.5rem + 1.75vh) 0 calc(0.25rem + 0.75vh) 0;
+}
+
+h3 {
+    font-size: min(calc(2.15rem + 0.75vw), 4rem);
+    margin: calc(0.5rem + 1.5vh) 0  calc(0.25rem + 0.5vh) 0;
+}
+
+h4 {
+    font-size: min(calc(1.75rem + 0.75vw), 3rem);
+    margin: calc(0.5rem + 1.25vh)0 calc(0.25rem + 0.75vh) 0;
+}
+
+h5 {
+    font-size: min(calc(1.5rem + 0.75vw), 2rem);
+    margin: calc(0.5rem + 1vh) 0 calc(0.25rem + 0.75vh) 0;
+}
+
+h6 {
+    font-size: min(calc(1.25rem + 0.75vw), 1.75rem);
+    margin: calc(0.5rem + 0.75vh) 0  calc(0.25rem + 0.75vh) 0;
+}
+
+body {
+    font-size: min(calc(0.75rem + 0.75vw), 2.5rem);
+    margin: calc(0.25rem + 1vh) 0 calc(0.5rem + 2vh) 0;
+    line-height: 1.5;
+    font-family: $sans-font, sans-serif;
+    font-weight: 100;
+}
+
+a,
+ins,
+u {
+  text-decoration-skip: ink edges;
+}
+
+.size-1 {
+    font-size: 3.25rem;
+}
+.size-2 {
+    font-size: 2.75rem;
+}
+.size-3 {
+    font-size: 2.5rem;
+}
+.size-4 {
+    font-size: 2.15rem;
+}
+.size-5 {
+    font-size: 1.75rem;
+}
+.size-6 {
+    font-size: 1.5rem;
+}
+.size-7 {
+    font-size: 1.25rem;
+}
+
+a {
+    $dark-blue: #0F52BA;
+    $light-blue: #0080FF;
+    $mid-blue: #0074D9;
+
+    transition: color .2s, border-bottom .2s;
+    color: $dark-blue;
+    text-decoration: none;
+    border-bottom: solid $dark-blue 2px;
+    border-radius: 1px;
+
+    &:link, &:visited {
+        color: $dark-blue;
+    }
+
+    &:hover {
+        color: $light-blue;
+        border-bottom: solid $light-blue 2px;
+    }
+
+    &:active {
+        transition: color .2s;
+        color: $mid-blue;
+    }
+}
+
+p {
+    margin: 1rem 0 1rem 0;
+}
+
+strong, .title {
+    font-weight: 800;
+}
+
+.title {
+    font-family: $sans-font;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.font-light {
+    font-weight: 200;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.scale-text {
+    font-size: calc(1em - (1vw/5));
+}

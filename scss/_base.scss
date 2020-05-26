@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Public Sans';
+    src: local('Public Sans'), url('./fonts/Public-Sans-Roman.ttf');
+}
+
+@font-face {
+    font-family: 'Butler';
+    src: local('Butler Regular'), url('./fonts/Butler_Regular.otf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Butler';
+    src: local('Butler Bold'), url('./fonts/Butler_Bold.otf');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Butler';
+    src: local('Butler Light'), url('./fonts/Butler_Light.otf');
+    font-weight: 200;
+}
+
+*,
+:before,
+:after {
+    box-sizing: border-box;
+}
+
+:root {
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+}
+
+html {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased
+}

@@ -1,0 +1,71 @@
+// helpers stolen from Bulma css
+
+.is-hidden {
+    display: none !important;
+}
+
+.is-sr-only {
+    border: none !important;
+    clip: rect(0, 0, 0, 0) !important;
+    height: 0.01em !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    white-space: nowrap !important;
+    width: 0.01em !important;
+}
+
+@media screen and (max-width: 768px) {
+    .is-hidden-mobile {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 769px),
+print {
+    .is-hidden-tablet {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+    .is-hidden-tablet-only {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .is-hidden-touch {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .is-hidden-desktop {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1215px) {
+    .is-hidden-desktop-only {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 1216px) {
+    .is-hidden-widescreen {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 1216px) and (max-width: 1407px) {
+    .is-hidden-widescreen-only {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 1408px) {
+    .is-hidden-fullhd {
+        display: none !important;
+    }
+}

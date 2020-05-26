@@ -1,0 +1,31 @@
+{
+  "name": "spirit",
+  "version": "0.1.0",
+  "description": "A simple, yet complete CSS framework",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel index.html",
+    "build": "parcel build index.html --public-url ./",
+    "publish:init": "git add dist && git commit -m 'Initial dist subtree commit'",
+    "publish": "git subtree push --prefix dist origin gh-pages"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SiddharthSham/spirit.git"
+  },
+  "keywords": [
+    "CSS"
+  ],
+  "author": "Siddharth Sham",
+  "license": "MIT",
+  "dependencies": {
+    "@smoovy/scroller": "^0.1.15",
+    "autoprefixer": "^9.8.0",
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "sass": "^1.26.5"
+  }
+}
