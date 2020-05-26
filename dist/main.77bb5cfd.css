@@ -350,7 +350,7 @@ template {
 
 @font-face {
   font-family: "Public Sans";
-  src: local("Public Sans"), url("/Public-Sans-Roman.69d01c33.ttf");
+  src: local("Public Sans"), url("/Public-Sans-Roman.69d01c33.ttf") format("truetype");
 }
 @font-face {
   font-family: "Butler";
