@@ -77,28 +77,26 @@ u {
 }
 
 a {
-    $dark-blue: #0F52BA;
-    $light-blue: #0080FF;
-    $mid-blue: #0074D9;
+    
 
     transition: color .2s, border-bottom .2s;
-    color: $dark-blue;
+    color: $link-dark;
     text-decoration: none;
-    border-bottom: solid $dark-blue 2px;
+    border-bottom: solid $link-dark 2px;
     border-radius: 1px;
 
     &:link, &:visited {
-        color: $dark-blue;
+        color: $link-dark;
     }
 
     &:hover {
-        color: $light-blue;
-        border-bottom: solid $light-blue 2px;
+        color: $link-light;
+        border-bottom: solid $link-light 2px;
     }
 
     &:active {
         transition: color .2s;
-        color: $mid-blue;
+        color: $link-mid;
     }
 }
 
@@ -140,4 +138,12 @@ strong, .title {
 
 .scale-text {
     font-size: calc(1em - (1vw/5));
+}
+
+.is-family-sans-serif {
+    font-family: $sans-font;
+}
+
+.is-family-serif {
+    font-family: $serif-font;
 }

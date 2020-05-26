@@ -581,12 +581,12 @@ html {
     display: none !important;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1023px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .is-hidden-tablet-only {
     display: none !important;
   }
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1024px) {
   .is-hidden-touch {
     display: none !important;
   }
@@ -596,7 +596,7 @@ html {
     display: none !important;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1215px) {
+@media screen and (min-width: 1024px) and (max-width: 1216px) {
   .is-hidden-desktop-only {
     display: none !important;
   }
@@ -606,7 +606,7 @@ html {
     display: none !important;
   }
 }
-@media screen and (min-width: 1216px) and (max-width: 1407px) {
+@media screen and (min-width: 1216px) and (max-width: 1408px) {
   .is-hidden-widescreen-only {
     display: none !important;
   }
@@ -1621,6 +1621,14 @@ strong, .title {
   font-size: calc(1em - (1vw/5));
 }
 
+.is-family-sans-serif {
+  font-family: "Public Sans", sans-serif;
+}
+
+.is-family-serif {
+  font-family: "Butler", serif;
+}
+
 .container {
   max-width: 100%;
   width: 100%;
@@ -1706,17 +1714,22 @@ form .field .help {
   opacity: 0.75;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
   border: 1px solid black;
-  opacity: 0.5;
   border-radius: 3px;
   padding: 0.75rem 0.75rem;
-  transition: opacity 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
   font-size: 0.85em;
 }
-input:active, input:focus, select:active, select:focus, textarea:active, textarea:focus {
-  opacity: 1;
+input:active, input:focus,
+select:active,
+select:focus,
+textarea:active,
+textarea:focus {
   border: 1px solid black;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   outline: none;
 }
 

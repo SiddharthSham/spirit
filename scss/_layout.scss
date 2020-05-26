@@ -37,7 +37,7 @@
 article,
 .breakout-wrapper {
     display: grid;
-    grid-template-columns: [full-start] minmax(1em, 1fr) [content-start] minmax(0, 768px) [content-end] minmax(1em, 1fr) [full-end];
+    grid-template-columns: [full-start] minmax(1em, 1fr) [content-start] minmax(0, $mobile) [content-end] minmax(1em, 1fr) [full-end];
 }
 
 .breakout-wrapper[style*="--breakout-width"] {

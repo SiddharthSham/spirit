@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spirit</title>
+    <meta name="description" content="Spirit | A simple CSS Framework">
+    <meta name="keywords" content="spirit, css, web, design, develop, scss">
+    <title>Spirit | A simple CSS framework</title>
     <link rel="stylesheet" href="./scss/main.scss">
     <script defer src="./main.js"></script>
 </head>
@@ -23,6 +25,13 @@
     r-grid.scale-text {
         opacity: 0.85;
     }
+
+    body {
+        color: rgba(0, 0, 0, 0.75);
+    }
+    h1, h2, h3, h4, h5, h6 {
+        color: black;
+    }
 </style>
 
 <body>
@@ -31,7 +40,7 @@
             <h1 class="text-center">Spirit</h1>
             <p>
                 A customisable CSS framework that strives to be small, yet complete. With a strong focus on
-                typography, clean spacing, and semantic naming conventions;
+                typography, clean spacing, and semantic naming conventions,
                 Spirit is the perfect CSS microframework for everyone.
             </p>
 
@@ -170,7 +179,7 @@
                 </div>
                 <button type="button">Button</button>
                 <p>You can use the color utilities to mix and match your own styles of elements. For example:</p>
-                <button class="bg-green white border border--black lighten">Custom button</button>
+                <button type="button" class="bg-green white border border--black lighten">Custom button</button>
             </form>
 
             <hr>
@@ -335,7 +344,7 @@
                 also supplies a customisable .breakout class
                 which you can use to allow elements to be fullwidth, responsively.
             </p>
-            <article class="container breakout bg-silver" style="--breakout-width:480px">
+            <article class="container breakout breakout-wrapper bg-silver mt-5 mb-5" style="--breakout-width:480px">
                 <h3>Example</h3>
                 <p>This content will only extend until a max-width of 480px, beyond which it will start wrapping. This
                     width

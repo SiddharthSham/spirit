@@ -15,18 +15,19 @@ form {
     }
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
     border: 1px solid black;
-    opacity: 0.5;
     border-radius: 3px;
     padding: 0.75rem 0.75rem;
-    transition: opacity 0.2s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out;
     font-size: 0.85em;
 
     &:active,
     &:focus {
-        opacity: 1;
         border: 1px solid black;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
         outline: none;
     }
 }
@@ -48,20 +49,24 @@ button {
     margin: 1rem 0 0.5rem 0;
     background-color: #D4D4D4;
     transition: filter 0.2s ease-in-out,
-                transform 0.1s ease-out,
-                box-shadow 0.1s ease-out;
+        transform 0.1s ease-out,
+        box-shadow 0.1s ease-out;
+
     &.lighten {
         &:hover {
             filter: brightness(110%);
         }
     }
+
     &:hover {
         filter: brightness(90%);
         box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     }
+
     &:active {
         transform: scale(0.95);
     }
+
     &:focus {
         outline: none;
     }

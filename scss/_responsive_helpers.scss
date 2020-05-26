@@ -15,56 +15,56 @@
     width: 0.01em !important;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $mobile) {
     .is-hidden-mobile {
         display: none !important;
     }
 }
 
-@media screen and (min-width: 769px),
+@media screen and (min-width: $tablet),
 print {
     .is-hidden-tablet {
         display: none !important;
     }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1023px) {
+@media screen and (min-width: $tablet) and (max-width: $desktop) {
     .is-hidden-tablet-only {
         display: none !important;
     }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: $desktop) {
     .is-hidden-touch {
         display: none !important;
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: $desktop) {
     .is-hidden-desktop {
         display: none !important;
     }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1215px) {
+@media screen and (min-width: $desktop) and (max-width: $widescreen) {
     .is-hidden-desktop-only {
         display: none !important;
     }
 }
 
-@media screen and (min-width: 1216px) {
+@media screen and (min-width: $widescreen) {
     .is-hidden-widescreen {
         display: none !important;
     }
 }
 
-@media screen and (min-width: 1216px) and (max-width: 1407px) {
+@media screen and (min-width: $widescreen) and (max-width: $fullhd) {
     .is-hidden-widescreen-only {
         display: none !important;
     }
 }
 
-@media screen and (min-width: 1408px) {
+@media screen and (min-width: $fullhd) {
     .is-hidden-fullhd {
         display: none !important;
     }
