@@ -24,8 +24,14 @@ th {
 
 ul,
 ol {
-    margin: 0.25rem 0 1rem 0;
+    margin: 0rem 0 1rem 0;
     padding: 0;
+    li:first-child {
+        margin-top: 1rem;
+    }
+    li {
+        margin-top: 0.25rem;
+    }
 }
 
 ul {
@@ -38,7 +44,6 @@ ul {
 
 ol {
     list-style: decimal inside;
-
     ol {
         list-style-type: lower-alpha;
     }
