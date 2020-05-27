@@ -77,13 +77,12 @@ u {
 }
 
 a {
-    
-
     transition: color .2s, border-bottom .2s;
     color: $link-dark;
     text-decoration: none;
     border-bottom: solid $link-dark 2px;
     border-radius: 1px;
+    width: fit-content;
 
     &:link, &:visited {
         color: $link-dark;
@@ -102,6 +101,23 @@ a {
 
 p {
     margin: 1rem 0 1rem 0;
+}
+
+blockquote {
+    font-style: italic;
+    position: relative;
+    margin: 1rem 1rem 1rem 0;
+    padding-left: 2rem;
+    &::before {
+        content: '';
+        width: 2px;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: black;
+        border-radius: 2px;
+    }
 }
 
 strong, .title {

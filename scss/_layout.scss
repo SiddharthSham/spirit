@@ -6,20 +6,33 @@
     margin-right: auto;
 }
 
-.column {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    flex-basis: 0;
-    flex-shrink: 1;
-    padding: 0.5rem;
-}
+// @import './columns';
 
 .row {
     display: flex;
     flex-direction: row;
-    flex-grow: 1;
-    flex-shrink: 1;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    align-items: flex-start;
+}
+
+.column {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.row.is-mobile {
+    .column {
+        flex: 1 1 0;
+    }
+}
+
+@media screen and (min-width: $mobile) {
+    .column {
+        flex: 1;
+    }
 }
 
 .is-fullheight {

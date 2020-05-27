@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Public Sans';
+    src: local('Public Sans'), url('./fonts/Public-Sans-Roman.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Butler';
+    src: local('Butler Regular'), url('./fonts/Butler_Regular.otf');
+    font-display: swap;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Butler';
+    src: local('Butler Bold'), url('./fonts/Butler_Bold.otf');
+    font-display: swap;
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Butler';
+    src: local('Butler Light'), url('./fonts/Butler_Light.otf');
+    font-display: swap;
+    font-weight: 200;
+}

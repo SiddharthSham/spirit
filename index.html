@@ -8,7 +8,9 @@
     <meta name="keywords" content="spirit, css, web, design, develop, scss">
     <link rel="icon" href="./static/favicon.webp" type="image/webp" sizes="16x16">
     <title>Spirit | A simple CSS framework</title>
-    <link rel="preload" as="style" href="./scss/main.scss" onload="this.rel='stylesheet'" onerror="this.rel='stylesheet'">
+    <link rel="stylesheet" href="./scss/_fonts.scss">
+    <link rel="preload" as="style" href="./scss/main.scss" onload="this.rel='stylesheet'"
+        onerror="this.rel='stylesheet'">
     <script defer src="./main.js"></script>
 </head>
 
@@ -48,12 +50,12 @@
             <p>
                 A customisable CSS framework that strives to be small, yet complete. With a strong focus on
                 typography, clean spacing, and semantic naming conventions,
-                Spirit is the perfect CSS microframework for everyone.
+                Spirit is the perfect CSS microframework for everyone. <br>
+                <a rel="noopener noreferrer" target="_blank" href="https://github.com/SiddharthSham/spirit">
+                    Link to repository
+                </a>
             </p>
-            <p>
-                <a rel="noopener noreferrer" target="_blank" href="https://github.com/SiddharthSham/spirit">Link to
-                    repository</a>
-            </p>
+
 
             <hr>
             <h1>Typography</h1>
@@ -65,8 +67,8 @@
             <h3>Typefaces used</h3>
             <p>These are freely available, high quality typefaces.</p>
             <ul>
-                <li> <a href="https://fabiandesmet.com/portfolio/butler-font/">Butler</a></li>
-                <li> <a href="https://public-sans.digital.gov/">Public Sans</a></li>
+                <li> <a rel="noopener noreferrer" href="https://fabiandesmet.com/portfolio/butler-font/">Butler</a></li>
+                <li> <a rel="noopener noreferrer" href="https://public-sans.digital.gov/">Public Sans</a></li>
             </ul>
             <h1>h1 - Heading 1</h1>
             <h2>h2 - Heading 2</h2>
@@ -85,9 +87,16 @@
             <p class="size-6">.size-6</p>
             <p class="size-7">.size-7</p>
 
+            <h3>Blockquotes</h3>
+            <blockquote cite="http://www.worldwildlife.org/who/index.html">
+                For 50 years, WWF has been protecting the future of nature. The world's leading conservation
+                organization, WWF works in 100 countries and is supported by 1.2 million members in the United States
+                and close to 5 million globally.
+            </blockquote>
+
             <h3>Links</h3>
             <p>
-                <a href="#">Links</a> are specially styled to look better in a block of text.
+                <a rel="noopener noreferrer" href="#">Links</a> are specially styled to look better in a block of text.
             </p>
 
             <h3>Scale text</h3>
@@ -131,7 +140,8 @@
                 <r-cell colspan=1-2 colspan-s=1>1-2 / 1</r-cell>
                 <r-cell colspan=3.. colspan-s=2..>3.. / 2</r-cell>
             </r-grid>
-            <p class="italic">Note: This is a heavily modified version of the <a href="https://rsms.me/raster/">Raster
+            <p class="italic">Note: This is a heavily modified version of the <a rel="noopener noreferrer"
+                    href="https://rsms.me/raster/">Raster
                     Grid
                     Subsystem</a>.</p>
             <hr>
@@ -144,23 +154,22 @@
             <div class="container row is-fullheight flex-center breakout bg-silver">
                 <p class="size-7">Lorem ipsum.</p>
             </div>
-            <p class="mt-5 mb-5">Infinitely nestable rows and columns allow you to effortlessly create incredibly
+            <p>Infinitely nestable rows and columns allow you to effortlessly create incredibly
                 complex
                 layouts. Use the
                 full power
                 of Flexbox and Grid to bend CSS to your will.
             </p>
             <div class="container row breakout bg-silver" style="min-height: 9rem;">
-                <div class="column" style="border: solid #111111 2px; color: black; border-right: 0;">
-                    C1
-                    <div class="row">
-                        <div class="column" style="border: solid #111111 2px; color: black; border-right: 0;">N1</div>
-                        <div class="column" style="border: solid #111111 2px; color: black; border-right: 0;">N2</div>
-                        <div class="column" style="border: solid #111111 2px; color: black;">N3</div>
-                    </div>
+                <div class="row border border--black">
+                    <div class="column border border--black">Row 1, Column 1</div>
+                    <div class="column border border--black">Row 1, Column 2</div>
+                    <div class="column border border--black">Row 1, Column 3</div>
                 </div>
-                <div class="column" style="border: solid #111111 2px; color: black; border-right: 0;">C2</div>
-                <div class="column" style="border: solid #111111 2px; color: black;">C3</div>
+                <div class="row border border--black">
+                    <div class="column border border--black">Row 2, Column 1</div>
+                    <div class="column border border--black">Row 2, Column 2</div>
+                </div>
             </div>
 
             <p class="italic">Note: Fixed width content within a flex container may overflow on smaller displays.</p>
@@ -270,41 +279,44 @@
                 image
                 using the style attribute.</p>
             <p>Random images from Unsplash:</p>
-            <div class="column no-pad">
-                <figure style="--aspect-ratio:1.5;">
-                    <picture>
-                        <source srcset="./static/1.webp" type="image/webp">
-                        <img src="./static/1.jpg" alt="Unsplash">
-                    </picture>
-                    <figcaption>This image uses --aspect-ratio: 1.5</figcaption>
-                </figure>
-                <div class="row">
-                    <div class="column no-pad">
-                        <figure style="--aspect-ratio:768/1023;">
-                            <picture>
-                                <source srcset="./static/2.webp" type="image/webp">
 
-                                <img src="./static/2.jpg" alt="Unsplash">
-                            </picture>
-                            <figcaption>This image uses --aspect-ratio: 1344/1789</figcaption>
-                        </figure>
-                    </div>
-                    <div class="column no-pad">
-                        <figure style="--aspect-ratio:768/1152;">
-                            <picture>
-                                <source srcset="./static/3.webp" type="image/webp">
-
-                                <img src="./static/3.jpg" alt="Unsplash">
-                            </picture>
-                            <figcaption>This image uses --aspect-ratio: 860/1290</figcaption>
-                        </figure>
-                    </div>
+            <div class="row">
+                <div class="column no-pad">
+                    <figure style="--aspect-ratio:1.5;">
+                        <picture>
+                            <source srcset="./static/1.webp" type="image/webp">
+                            <img src="./static/1.jpg" alt="Unsplash">
+                        </picture>
+                        <figcaption>This image uses --aspect-ratio: 1.5</figcaption>
+                    </figure>
                 </div>
             </div>
+
+            <div class="row is-mobile">
+                <div class="column no-pad">
+                    <figure style="--aspect-ratio:768/1023;">
+                        <picture>
+                            <source srcset="./static/2.webp" type="image/webp">
+                            <img src="./static/2.jpg" alt="Unsplash">
+                        </picture>
+                        <figcaption>This image uses --aspect-ratio: 1344/1789</figcaption>
+                    </figure>
+                </div>
+                <div class="column no-pad">
+                    <figure style="--aspect-ratio:768/1152;">
+                        <picture>
+                            <source srcset="./static/3.webp" type="image/webp">
+                            <img src="./static/3.jpg" alt="Unsplash">
+                        </picture>
+                        <figcaption>This image uses --aspect-ratio: 860/1290</figcaption>
+                    </figure>
+                </div>
+            </div>
+
             <p>These images will maintain their aspect ratio across all viewports. In combination with using the
                 picture tag, responsive images has never been easier.
             </p>
-            <p class="italic">Note: Based on code from this <a
+            <p class="italic">Note: Based on code from this <a rel="noopener noreferrer"
                     href="https://css-tricks.com/aspect-ratio-boxes/">article</a>. In particular, Thierry Koblentz's
                 work.
             </p>
@@ -321,7 +333,7 @@
             </div>
 
             <h3>Lists</h3>
-            <div class="row">
+            <div class="row is-mobile">
                 <div class="column">
                     <p><strong>Unordered lists:</strong></p>
                     <ul>
@@ -370,7 +382,7 @@
             <p>This effect is easily nestable, as seen on this very element. All the content on this page has been
                 wrapped in this style, with this element being wrapped twice.
             </p>
-            <p class="italic">Note: Code based on this <a
+            <p class="italic">Note: Code based on this <a rel="noopener noreferrer"
                     href="https://cloudfour.com/thinks/breaking-out-with-css-grid-layout/">article</a>.</p>
 
             <hr>
@@ -458,7 +470,8 @@
                 <li class="is-hidden-widescreen"> This sentence is hidden from widescreen and above. </li>
                 <li class="is-hidden-fullhd"> This sentence is hidden from fullhd and above. </li>
             </ol>
-            <p class="italic">Note: These helpers were taken directly from <a href="https://bulma.io/">Bulma CSS</a>.
+            <p class="italic">Note: These helpers were taken directly from <a rel="noopener noreferrer"
+                    href="https://bulma.io/">Bulma CSS</a>.
             </p>
 
             <hr>
@@ -501,9 +514,11 @@
                     <r-cell rowspan=6 class="bg-silver black"><code class="flex-center ">.bg-silver .black</code>
                     </r-cell>
                     <r-cell rowspan=6 colspan=2 class="bg-white black border border--black"><code
-                            class="flex-center">.bg-white .black .border .border--black</code></r-cell>
+                            class="flex-center">.bg-white
+                            .black .border .border--black</code></r-cell>
                 </r-grid>
-                <p class="italic">Note: Based on <a href="https://clrs.cc">clrs.cc</a> by mrmrs</p>
+                <p class="italic">Note: Based on <a rel="noopener noreferrer" href="https://clrs.cc">clrs.cc</a> by
+                    mrmrs</p>
             </div>
 
             <hr>
@@ -515,7 +530,7 @@
 const Spirit = {
   designer: "siddharth_sham",
   developer: "siddharth_sham",
-  portfolio: <a class="is-hidden-touch" href="https://siddharthsham.github.io">"https://siddharthsham.github.io"</a><a class="is-hidden-desktop" href="https://siddharthsham.github.io">link</a>
+  portfolio: <a rel="noopener noreferrer" class="is-hidden-touch" href="https://siddharthsham.github.io">"https://siddharthsham.github.io"</a><a rel="noopener noreferrer" class="is-hidden-desktop" href="https://siddharthsham.github.io">link</a>
 };
                 </code>
             </pre>
