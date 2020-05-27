@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Spirit | A simple CSS Framework">
     <meta name="keywords" content="spirit, css, web, design, develop, scss">
+    <link rel="icon" href="./static/favicon.webp" type="image/webp" sizes="16x16">
     <title>Spirit | A simple CSS framework</title>
-    <link rel="stylesheet" href="./scss/main.scss">
+    <link rel="preload" as="style" href="./scss/main.scss" onload="this.rel='stylesheet'" onerror="this.rel='stylesheet'">
     <script defer src="./main.js"></script>
 </head>
 
@@ -29,7 +30,13 @@
     body {
         color: rgba(0, 0, 0, 0.75);
     }
-    h1, h2, h3, h4, h5, h6 {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         color: black;
     }
 </style>
@@ -42,6 +49,10 @@
                 A customisable CSS framework that strives to be small, yet complete. With a strong focus on
                 typography, clean spacing, and semantic naming conventions,
                 Spirit is the perfect CSS microframework for everyone.
+            </p>
+            <p>
+                <a rel="noopener noreferrer" target="_blank" href="https://github.com/SiddharthSham/spirit">Link to
+                    repository</a>
             </p>
 
             <hr>

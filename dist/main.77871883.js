@@ -13,4 +13,3 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"@smoovy/utils":"uZ4H","@smoovy/event":"UC2z","@smoovy/ticker":"fIo0","@smoovy/observer":"yC3B","@smoovy/tween":"Cmy5"}],"epB2":[function(require,module,exports) {
 "use strict";var o=require("@smoovy/scroller");window.onload=function(){console.log("Spirit ~ Siddharth S.");var r=document.querySelector(".scroll-wrapper");(0,o.nativeSmoothScroll)({element:r})};
 },{"@smoovy/scroller":"yzXd"}]},{},["epB2"], null)
-//# sourceMappingURL=main.6d14efdc.js.map

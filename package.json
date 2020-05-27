@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\"",
     "dev": "parcel index.html",
-    "build": "parcel build index.html --public-url ./",
+    "build": "parcel build index.html --no-source-maps --public-url ./",
     "publish:init": "git add dist && git commit -m 'Initial dist subtree commit'",
     "publish": "git subtree push --prefix dist origin gh-pages"
   },
