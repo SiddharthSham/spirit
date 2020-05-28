@@ -1,6 +1,10 @@
 body {
-    font-size: 1rem;
+    font-size: min(calc(0.75rem + 0.75vw), 1.25rem);
+    line-height: 1.5;
+    font-family: $sans-font, $native-sans-font;
+    font-weight: 400;
 }
+
 
 h1,
 h2,
@@ -46,13 +50,6 @@ h5 {
 h6 {
     font-size: min(calc(1.25rem + 0.75vw), 1.75rem);
     margin: calc(0.5rem + 0.75vh) 0 calc(0.25rem + 0.75vh) 0;
-}
-
-body {
-    font-size: min(calc(0.75rem + 0.75vw), 1.25rem);
-    line-height: 1.5;
-    font-family: $sans-font, $native-sans-font;
-    font-weight: 400;
 }
 
 a,

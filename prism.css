@@ -4,11 +4,14 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
  * prism.js tomorrow night eighties for JavaScript, CoffeeScript, CSS and HTML
  * Based on https://github.com/chriskempson/tomorrow-theme
  * @author Rose Pritchard
+
+ * customised by Siddharth S. (github.com/siddharthsham)
+
  */
 
 code[class*="language-"],
 pre[class*="language-"] {
-	color: #ccc;
+	color: #abb2bf;
 	background: none;
 	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 	font-size: 1em;
@@ -32,19 +35,19 @@ pre[class*="language-"] {
 
 /* Code blocks */
 pre[class*="language-"] {
-	padding: 1em;
-	margin: .5em 0;
+	padding: 0 1rem;
+	margin: .5rem 0;
 	overflow: auto;
 }
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-	background: #2d2d2d;
+	background: #282c34;
 }
 
 /* Inline code */
 :not(pre) > code[class*="language-"] {
-	padding: .1em;
+	padding: .5rem;
 	border-radius: .3em;
 	white-space: normal;
 }
@@ -54,15 +57,14 @@ pre[class*="language-"] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-	color: #999;
+	color: #818896;
 }
 
 .token.punctuation {
-	color: #ccc;
+	color: #abb2bf;
 }
 
 .token.tag,
-.token.attr-name,
 .token.namespace,
 .token.deleted {
 	color: #e2777a;
@@ -75,14 +77,15 @@ pre[class*="language-"] {
 .token.boolean,
 .token.number,
 .token.function {
-	color: #f08d49;
+	color: #61aeee;
 }
 
+.token.attr-name,
 .token.property,
 .token.class-name,
 .token.constant,
 .token.symbol {
-	color: #f8c555;
+	color: #d19a66;
 }
 
 .token.selector,
@@ -90,15 +93,13 @@ pre[class*="language-"] {
 .token.atrule,
 .token.keyword,
 .token.builtin {
-	color: #cc99cd;
+	color: #c678dd;
 }
 
-.token.string,
-.token.char,
-.token.attr-value,
+
 .token.regex,
 .token.variable {
-	color: #7ec699;
+	color: #e06c75;
 }
 
 .token.operator,
@@ -119,7 +120,10 @@ pre[class*="language-"] {
 	cursor: help;
 }
 
+.token.attr-value,
+.token.string,
+.token.char,
 .token.inserted {
-	color: green;
+	color: #98c379;
 }
 

@@ -125,11 +125,18 @@
             <h1 class="text-center">Spirit</h1>
             <p class="text-center italic scale-text">Light, modern & customisable</p>
             <div class="flex-center">
-                <iframe class="mr-1"
+                <iframe class="mr-1 is-hidden-desktop"
                     src="https://ghbtns.com/github-btn.html?user=siddharthsham&amp;repo=spirit&amp;type=star&amp;"
                     frameborder="0" width="50px" scrolling="0" height="20px"></iframe>
-                <iframe src="https://ghbtns.com/github-btn.html?user=siddharthsham&type=follow" frameborder="0"
+                <iframe class="is-hidden-desktop"
+                    src="https://ghbtns.com/github-btn.html?user=siddharthsham&type=follow" frameborder="0"
                     scrolling="0" width="155" height="20" title="GitHub"></iframe>
+                <iframe class="mr-1 is-hidden-touch"
+                    src="https://ghbtns.com/github-btn.html?user=siddharthsham&amp;repo=spirit&amp;type=star&amp;&size=large"
+                    frameborder="0" width="70px" scrolling="0" height="30px"></iframe>
+                <iframe class="is-hidden-touch"
+                    src="https://ghbtns.com/github-btn.html?user=siddharthsham&type=follow&size=large" frameborder="0"
+                    scrolling="0" width="235" height="30" title="GitHub"></iframe>
             </div>
 
             <p class="mt-5">
@@ -142,9 +149,8 @@
             <hr>
             <h1>Variables</h1>
             <p>A convenient set of Sass variables for you to create your own version of Spirit.</p>
-            
-            <pre class="pre">
-                <code class="language-scss code">
+
+            <pre class="pre"><code class="language-scss code">
 // native font snippet from Bootstrap
 $native-sans-font: -apple-system,
 BlinkMacSystemFont,
@@ -207,8 +213,7 @@ $black: #111111;
 $link-dark: #0F52BA;
 $link-light: #0080FF;
 $link-mid: #0074D9;
-                </code>
-            </pre>
+                </code></pre>
 
             <hr>
             <h1>Typography</h1>
@@ -218,20 +223,47 @@ $link-mid: #0074D9;
                 customise them to your need.
             </p>
             <h3>Typefaces used</h3>
-            <p>These are freely available, high quality typefaces.</p>
-            <ul>
-                <li> <a rel="noopener noreferrer" href="https://fabiandesmet.com/portfolio/butler-font/">Butler</a></li>
-                <li> <a rel="noopener noreferrer" href="https://public-sans.digital.gov/">Public Sans</a></li>
-            </ul>
-            <h1>h1 - Heading 1</h1>
-            <h2>h2 - Heading 2</h2>
-            <h3>h3 - Heading 3</h3>
-            <h4>h4 - Heading 4</h4>
-            <h5>h5 - Heading 5</h5>
-            <h6>h6 - Heading 6</h6>
+            <p>These are freely available, high quality typefaces.
+                <a target="_blank" rel="noopener noreferrer"
+                    href="https://fabiandesmet.com/portfolio/butler-font/">Butler</a>,
+                <a target="_blank" rel="noopener noreferrer" href="https://public-sans.digital.gov/">Public
+                    Sans</a>
+            </p>
+            <div class="row breakout">
+                <div class="column no-pad">
+                    <figure>
+                        <picture>
+                            <source srcset="./static/butler.webp" type="image/webp">
+                            <img src="./static/butler.jpg" alt="Butler">
+                        </picture>
+                    </figure>
+                </div>
+                <div class="column no-pad">
+                    <figure>
+                        <picture>
+                            <source srcset="./static/public-sans.webp" type="image/webp">
+                            <img src="./static/public-sans.jpg" alt="Public Sans">
+                        </picture>
+                    </figure>
+                </div>
+            </div>
+
+            <h3>Headings</h3>
+            <code class="code lang-html">
+                &lt;h1&gt;Heading 1&lt;/h1&gt;
+            </code>
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
 
             <h3>Custom sizes</h3>
             <p>Custom sizes are not fluid, but they let you 'lock' the font-size of text across all device widths.</p>
+            <code class="code lang-html">
+                &lt;p class="size-1"&gt;.size-1&lt;/p&gt;
+            </code>
             <p class="size-1">.size-1</p>
             <p class="size-2">.size-2</p>
             <p class="size-3">.size-3</p>
@@ -246,21 +278,36 @@ $link-mid: #0074D9;
                 organization, WWF works in 100 countries and is supported by 1.2 million members in the United States
                 and close to 5 million globally.
             </blockquote>
+            <pre class="pre"><code class="code lang-html">
+&lt;blockquote cite="http://www.worldwildlife.org/who/index.html"&gt;
+For 50 years, WWF has been protecting the future of nature. The world's leading conservation
+organization, WWF works in 100 countries and is supported by 1.2 million members in the United States
+and close to 5 million globally.
+&lt;/blockquote&gt;
+            </code></pre>
 
             <h3>Links</h3>
             <p>
-                <a rel="noopener noreferrer" href="#">Links</a> are specially styled to look better in a block of text.
+                <a target="_blank" rel="noopener noreferrer" href="#">Links</a> are specially styled to look better in a
+                block of text.
             </p>
+            <code class="code lang-html">
+                &lt;a href="www.example.com"&gt;Cool link :D&lt;/a&gt;
+            </code>
 
             <h3>Scale text</h3>
             <p>A utility class to make the font-size of text content slightly smaller than it's parent. It uses fluid
                 sizing
                 in order to be perfectly responsive.</p>
             <p class="scale-text">This sentence, for example, is scaled down.</p>
-
+            <code class="code lang-html">
+                &lt;p class="scale-text"&gt;This sentence, for example, is scaled down.&lt;/p&gt;
+            </code>
             <h3 class="title">Title</h3>
             <p>This provides a sans-serif title font, with extra weight. </p>
-
+            <code class="code lang-html">
+                &lt;p class="title"&gt;Sans-serif title.&lt;/p&gt;
+            </code>
             <hr>
 
             <h1>Grids:</h1>
@@ -283,6 +330,23 @@ $link-mid: #0074D9;
                 <r-cell colspan=4-5>4-5</r-cell>
             </r-grid>
 
+            <pre class="pre"><code class="code lang-html">
+&lt;r-grid style=&quot;--columns:6; --rows:6&quot;&gt;<br />
+    &lt;r-cell rowspan=2&gt;, 2&lt;/r-cell&gt;<br />
+    &lt;r-cell colspan=3&gt;3&lt;/r-cell&gt;<br />
+    &lt;r-cell&gt;&lt;/r-cell&gt;<br />
+    &lt;r-cell colspan=7-8&gt;7-8&lt;/r-cell&gt;<br />
+    &lt;r-cell colspan=2+2&gt;2+2&lt;/r-cell&gt;<br />
+    &lt;r-cell colspan=5-8&gt;5-8&lt;/r-cell&gt;<br />
+    &lt;r-cell colspan=1-4&gt;1-4&lt;/r-cell&gt;<br />
+    &lt;r-cell colspan=6..&gt;6..&lt;/r-cell&gt;<br />
+    &lt;r-cell colspan=2..&gt;2..&lt;/r-cell&gt;<br />
+    &lt;r-cell colspan=4..&gt;4..&lt;/r-cell&gt;<br />
+    &lt;r-cell rowspan=5-6 colspan=1-2&gt;1-2, 5-6&lt;/r-cell&gt;<br />
+    &lt;r-cell colspan=4-5&gt;4-5&lt;/r-cell&gt;<br />
+&lt;/r-grid&gt;
+                </code></pre>
+
             <br>
             <p>This is a responsive grid:</p>
             <r-grid columns=6 columns-s=3 rows=2>
@@ -291,10 +355,23 @@ $link-mid: #0074D9;
                 <r-cell colspan=1-2 colspan-s=1>1-2 / 1</r-cell>
                 <r-cell colspan=3.. colspan-s=2..>3.. / 2</r-cell>
             </r-grid>
-            <p class="italic">Note: This is a heavily modified version of the <a rel="noopener noreferrer"
-                    href="https://rsms.me/raster/">Raster
+
+            <pre class="pre">
+<code class="code lang-html">
+&lt;r-grid columns=6 columns-s=3 rows=2&gt;<br />
+    &lt;r-cell colspan=2 colspan-s=row&gt;2 / row&lt;/r-cell&gt;<br />
+    &lt;r-cell colspan=3-6 colspan-s=row&gt;3, 6 / row&lt;/r-cell&gt;<br />
+    &lt;r-cell colspan=1-2 colspan-s=1&gt;1-2 / 1&lt;/r-cell&gt;<br />
+    &lt;r-cell colspan=3.. colspan-s=2..&gt;3.. / 2&lt;/r-cell&gt;<br />
+&lt;/r-grid&gt;
+</code>
+</pre>
+
+            <p class="italic">Note: This is a heavily modified version of the
+                <a target="_blank" rel="noopener noreferrer" href="https://rsms.me/raster/">Raster
                     Grid
-                    Subsystem</a>.</p>
+                    Subsystem</a>.
+            </p>
             <hr>
 
             <h3>Flexbox utilities:</h3>
@@ -302,16 +379,23 @@ $link-mid: #0074D9;
                 Applying class="container row is-fullheight flex-center" to a div element creates the following content:
             </p>
 
-            <div class="container row is-fullheight flex-center breakout bg-silver">
+            <div class="container breakout row is-fullheight flex-center bg-silver">
                 <p class="size-7">Lorem ipsum.</p>
             </div>
+
+            <pre class="pre"><code class="code lang-html">
+&lt;div class=&quot;container row is-fullheight flex-center bg-silver&quot;&gt;<br />
+    &lt;p class=&quot;size-7&quot;&gt;Lorem ipsum.&lt;/p&gt;<br />
+&lt;/div&gt;
+                </code></pre>
+
             <p>Infinitely nestable rows and columns allow you to effortlessly create incredibly
                 complex
                 layouts. Use the
                 full power
                 of Flexbox and Grid to bend CSS to your will.
             </p>
-            <div class="container row breakout bg-silver" style="min-height: 9rem;">
+            <div class="container breakout row bg-silver" style="min-height: 9rem;">
                 <div class="row border border--black">
                     <div class="column border border--black">Row 1, Column 1</div>
                     <div class="column border border--black">Row 1, Column 2</div>
@@ -322,6 +406,20 @@ $link-mid: #0074D9;
                     <div class="column border border--black">Row 2, Column 2</div>
                 </div>
             </div>
+
+            <pre class="pre"><code class="code lang-html">
+&lt;div class=&quot;container breakout row bg-silver&quot; style=&quot;min-height: 9rem;&quot;&gt;<br />
+    &lt;div class=&quot;row border border--black&quot;&gt;<br />
+        &lt;div class=&quot;column border border--black&quot;&gt;Row 1, Column 1&lt;/div&gt;<br />
+        &lt;div class=&quot;column border border--black&quot;&gt;Row 1, Column 2&lt;/div&gt;<br />
+        &lt;div class=&quot;column border border--black&quot;&gt;Row 1, Column 3&lt;/div&gt;<br />
+    &lt;/div&gt;<br />
+    &lt;div class=&quot;row border border--black&quot;&gt;<br />
+        &lt;div class=&quot;column border border--black&quot;&gt;Row 2, Column 1&lt;/div&gt;<br />
+        &lt;div class=&quot;column border border--black&quot;&gt;Row 2, Column 2&lt;/div&gt;<br />
+    &lt;/div&gt;<br />
+&lt;/div&gt;
+                </code></pre>
 
             <p class="italic">Note: Fixed width content within a flex container may overflow on smaller displays.</p>
             <hr>
@@ -353,6 +451,34 @@ $link-mid: #0074D9;
                 <button type="button" class="bg-green white border border--black lighten">Custom button</button>
             </form>
 
+            <pre class="pre"><code class="code lang-html">
+&lt;form action=&quot;#&quot;&gt;<br />
+    &lt;div class=&quot;field&quot;&gt;<br />
+        &lt;label for=&quot;name&quot;&gt;Your name: &lt;/label&gt;<br />
+        &lt;input type=&quot;text&quot; placeholder=&quot;John Smith&quot; /&gt;<br />
+        &lt;div class=&quot;help&quot;&gt;Don't worry, your information is safe with us.&lt;/div&gt;<br />
+    &lt;/div&gt;<br />
+    &lt;div class=&quot;field&quot;&gt;<br />
+        &lt;label for=&quot;email&quot;&gt;Email ID: &lt;/label&gt;<br />
+        &lt;input type=&quot;email&quot; placeholder=&quot;john@email.com&quot; /&gt;<br />
+    &lt;/div&gt;<br />
+    &lt;div class=&quot;field&quot;&gt;<br />
+        &lt;label for=&quot;name&quot;&gt;Country: &lt;/label&gt;<br />
+        &lt;select&gt;<br />
+            &lt;option&gt;Select dropdown&lt;/option&gt;<br />
+            &lt;option&gt;With options&lt;/option&gt;<br />
+        &lt;/select&gt;<br />
+    &lt;/div&gt;<br />
+    &lt;div class=&quot;field&quot;&gt;<br />
+        &lt;label for=&quot;textarea&quot;&gt;Textarea:&lt;/label&gt;<br />
+        &lt;textarea class=&quot;textarea&quot; placeholder=&quot;e.g. Hello world&quot;&gt;&lt;/textarea&gt;<br />
+    &lt;/div&gt;<br />
+    &lt;button type=&quot;button&quot;&gt;Button&lt;/button&gt;<br />
+    &lt;p&gt;You can use the color utilities to mix and match your own styles of elements. For example:&lt;/p&gt;<br />
+    &lt;button type=&quot;button&quot; class=&quot;bg-green white border border--black lighten&quot;&gt;Custom button&lt;/button&gt;<br />
+&lt;/form&gt;
+    </code></pre>
+
             <hr>
             <h1>Tables:</h1>
             <p>Tables are minimally styled, and come with a handy .table-container class for horizontally scrollable
@@ -379,11 +505,11 @@ $link-mid: #0074D9;
                     <tbody>
                         <tr>
                             <td>Jim</td>
-                            <td>Green</td>
-                            <td>Green</td>
-                            <td>Green</td>
-                            <td>Green</td>
                             <td>00001</td>
+                            <td>Green</td>
+                            <td>Green</td>
+                            <td>Green</td>
+                            <td>Red</td>
                             <td>Blue</td>
                             <td>Blue</td>
                             <td>Blue</td>
@@ -422,6 +548,17 @@ $link-mid: #0074D9;
                     </tbody>
                 </table>
             </div>
+
+            <pre class="pre"><code class="code lang-html">
+&lt;!-- <br />
+    Standard HTML markup will suffice,<br />
+    for most use cases. The wrapper class <br />
+    is provided for cases where overflow is expected.<br />
+--&gt;<br />
+&lt;div class=&quot;table-container&quot;&gt;<br />
+    &lt;!-- Table markup --&gt;<br />
+&lt;/div&gt;
+    </code></pre>
 
             <hr>
 
@@ -464,10 +601,32 @@ $link-mid: #0074D9;
                 </div>
             </div>
 
+            <pre class="pre"><code class="code lang-html">
+&lt;figure style=&quot;--aspect-ratio:1.5;&quot;&gt;<br />
+    &lt;picture&gt;<br />
+        &lt;source srcset=&quot;./static/1.webp&quot; type=&quot;image/webp&quot;&gt;<br />
+        &lt;img src=&quot;./static/1.jpg&quot; alt=&quot;Unsplash&quot;&gt;<br />
+    &lt;/picture&gt;<br />
+    &lt;figcaption&gt;
+        This image uses --aspect-ratio: 1.5
+    &lt;/figcaption&gt;<br />
+&lt;/figure&gt;
+
+&lt;figure style=&quot;--aspect-ratio:768/1023;&quot;&gt;<br />
+    &lt;picture&gt;<br />
+        &lt;source srcset=&quot;./static/2.webp&quot; type=&quot;image/webp&quot;&gt;<br />
+        &lt;img src=&quot;./static/2.jpg&quot; alt=&quot;Unsplash&quot;&gt;<br />
+    &lt;/picture&gt;<br />
+    &lt;figcaption&gt;
+        This image uses --aspect-ratio: 1344/1789
+    &lt;/figcaption&gt;<br />
+&lt;/figure&gt;
+                </code></pre>
+
             <p>These images will maintain their aspect ratio across all viewports. In combination with using the
                 picture tag, responsive images has never been easier.
             </p>
-            <p class="italic">Note: Based on code from this <a rel="noopener noreferrer"
+            <p class="italic">Note: Based on code from this <a target="_blank" rel="noopener noreferrer"
                     href="https://css-tricks.com/aspect-ratio-boxes/">article</a>. In particular, Thierry Koblentz's
                 work.
             </p>
@@ -482,6 +641,13 @@ $link-mid: #0074D9;
                     The box element is a simple container with padding and shadow. It can contain any arbitrary content.
                 </p>
             </div>
+
+<pre class="pre"><code class="code lang-html">
+&lt;div class=&quot;box&quot;&gt;<br />
+    &lt;p&gt;Box element.&lt;/p&gt;<br />
+&lt;/div&gt;
+</code>
+</pre>
 
             <h3>Lists</h3>
             <div class="row is-mobile">
@@ -533,7 +699,7 @@ $link-mid: #0074D9;
             <p>This effect is easily nestable, as seen on this very element. All the content on this page has been
                 wrapped in this style, with this element being wrapped twice.
             </p>
-            <p class="italic">Note: Code based on this <a rel="noopener noreferrer"
+            <p class="italic">Note: Code based on this <a target="_blank" rel="noopener noreferrer"
                     href="https://cloudfour.com/thinks/breaking-out-with-css-grid-layout/">article</a>.</p>
 
             <hr>
@@ -621,7 +787,7 @@ $link-mid: #0074D9;
                 <li class="is-hidden-widescreen"> This sentence is hidden from widescreen and above. </li>
                 <li class="is-hidden-fullhd"> This sentence is hidden from fullhd and above. </li>
             </ol>
-            <p class="italic">Note: These helpers were taken directly from <a rel="noopener noreferrer"
+            <p class="italic">Note: These helpers were taken directly from <a target="_blank" rel="noopener noreferrer"
                     href="https://bulma.io/">Bulma CSS</a>.
             </p>
 
@@ -668,7 +834,8 @@ $link-mid: #0074D9;
                             class="flex-center">.bg-white
                             .black .border .border--black</code></r-cell>
                 </r-grid>
-                <p class="italic">Note: Based on <a rel="noopener noreferrer" href="https://clrs.cc">clrs.cc</a> by
+                <p class="italic">Note: Based on <a target="_blank" rel="noopener noreferrer"
+                        href="https://clrs.cc">clrs.cc</a> by
                     mrmrs</p>
             </div>
 
@@ -682,7 +849,7 @@ const Spirit = {
   designer: "siddharth_sham",
   developer: "siddharth_sham",
   repository: <a rel="noopener noreferrer" target="_blank" href="https://github.com/SiddharthSham/spirit">repository</a>
-  portfolio: <a rel="noopener noreferrer" class="is-hidden-touch" href="https://siddharthsham.github.io">"https://siddharthsham.github.io"</a><a rel="noopener noreferrer" class="is-hidden-desktop" href="https://siddharthsham.github.io">link</a>
+  portfolio: <a target="_blank" rel="noopener noreferrer" class="is-hidden-touch" href="https://siddharthsham.github.io">"https://siddharthsham.github.io"</a><a target="_blank" rel="noopener noreferrer" class="is-hidden-desktop" href="https://siddharthsham.github.io">link</a>
 };
                 </code>
             </pre>
