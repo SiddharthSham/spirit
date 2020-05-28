@@ -1,3 +1,7 @@
+body {
+    font-size: 1rem;
+}
+
 h1,
 h2,
 h3,
@@ -5,14 +9,18 @@ h4,
 h5,
 h6 {
     font-weight: normal;
-    font-family: $serif-font, serif;
+    font-family: $serif-font, $native-serif-font;
     line-height: 1.5;
     margin: 0;
+
+    &+p {
+        margin-top: 0;
+    }
 }
 
 h1 {
     font-size: min(calc(3rem + 0.75vw), 6rem);
-    margin:  calc(0.5rem + 2vh)  0 calc(0.25rem + 1vh) 0;
+    margin: calc(0.5rem + 2vh) 0 calc(0.25rem + 1vh) 0;
 }
 
 h2 {
@@ -22,7 +30,7 @@ h2 {
 
 h3 {
     font-size: min(calc(2.15rem + 0.75vw), 4rem);
-    margin: calc(0.5rem + 1.5vh) 0  calc(0.25rem + 0.5vh) 0;
+    margin: calc(0.5rem + 1.5vh) 0 calc(0.25rem + 0.5vh) 0;
 }
 
 h4 {
@@ -37,41 +45,46 @@ h5 {
 
 h6 {
     font-size: min(calc(1.25rem + 0.75vw), 1.75rem);
-    margin: calc(0.5rem + 0.75vh) 0  calc(0.25rem + 0.75vh) 0;
+    margin: calc(0.5rem + 0.75vh) 0 calc(0.25rem + 0.75vh) 0;
 }
 
 body {
-    font-size: min(calc(0.75rem + 0.75vw), 2.5rem);
-    margin: calc(0.25rem + 1vh) 0 calc(0.5rem + 2vh) 0;
+    font-size: min(calc(0.75rem + 0.75vw), 1.25rem);
     line-height: 1.5;
-    font-family: $sans-font, sans-serif;
+    font-family: $sans-font, $native-sans-font;
     font-weight: 400;
 }
 
 a,
 ins,
 u {
-  text-decoration-skip: ink edges;
+    text-decoration-skip: ink edges;
 }
 
 .size-1 {
     font-size: 3.25rem;
 }
+
 .size-2 {
     font-size: 2.75rem;
 }
+
 .size-3 {
     font-size: 2.5rem;
 }
+
 .size-4 {
     font-size: 2.15rem;
 }
+
 .size-5 {
     font-size: 1.75rem;
 }
+
 .size-6 {
     font-size: 1.5rem;
 }
+
 .size-7 {
     font-size: 1.25rem;
 }
@@ -84,7 +97,8 @@ a {
     border-radius: 1px;
     width: fit-content;
 
-    &:link, &:visited {
+    &:link,
+    &:visited {
         color: $link-dark;
     }
 
@@ -108,6 +122,7 @@ blockquote {
     position: relative;
     margin: 1rem 1rem 1rem 0;
     padding-left: 2rem;
+
     &::before {
         content: '';
         width: 2px;
@@ -120,7 +135,8 @@ blockquote {
     }
 }
 
-strong, .title {
+strong,
+.title {
     font-weight: 800;
 }
 

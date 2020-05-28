@@ -105,3 +105,20 @@ hr {
     border-radius: 1px;
     margin: 1rem 0;
 }
+
+.code {
+    font-size: 0.85em;
+    white-space: nowrap;
+}
+
+.pre {
+    margin-top: 0;
+    padding: 0 0.5rem;
+    max-height: 75vh;
+    border-radius: 3px;
+}
+
+.pre>.code {
+    display: block;
+    white-space: pre;
+}

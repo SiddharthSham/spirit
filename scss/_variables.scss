@@ -1,4 +1,22 @@
 // font families
+
+// native font snippet from Bootstrap
+$native-sans-font: -apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+"Roboto",
+"Helvetica Neue",
+Arial,
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol" !default;
+
+$native-serif-font: Georgia,
+Times,
+"Times New Roman",
+serif;
+
 $sans-font: 'Public Sans',
 sans-serif;
 $serif-font: 'Butler',

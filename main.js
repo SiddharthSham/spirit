@@ -1,11 +1,12 @@
-import {
-    nativeSmoothScroll
-} from '@smoovy/scroller';
+// import {
+//     nativeSmoothScroll
+// } from '@smoovy/scroller';
 
 window.onload = () => {
     console.log('Spirit ~ Siddharth S.')
-    const mainEl = document.querySelector('.scroll-wrapper');
-    const scroller = nativeSmoothScroll({
-        element: mainEl
-    });
+    document.getElementById('loader').remove()
+    // const mainEl = document.querySelector('.scroll-wrapper');
+    // const scroller = nativeSmoothScroll({
+    //     element: mainEl
+    // });
 }
